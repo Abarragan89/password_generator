@@ -27,7 +27,7 @@ const shuffle = function (array) {
 }
 /////////////Password Class////////////////////
 //Password Class
-class PasswordObject {
+class Password {
   constructor() {
     this.pwLength = undefined;
     this.characterTypesPicked = [];
@@ -109,7 +109,7 @@ class PasswordObject {
 const writePassword = function () {
   //Confirm they want to make a password
   let getStarted = confirm("Welcome to the password generator. If you wish to continue and create a secure password, please click 'ok'.")
-  let password = new PasswordObject;
+  let password = new Password;
   //prompt user for length of password
   if (getStarted) {
     password.askLength();
